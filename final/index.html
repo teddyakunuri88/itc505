@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lights Out Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Lights Out Game</h1>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <div class="container" id="board">
+        <!-- This will be filled with the grid of squares -->
+      </div>
+      <div class="controls">
+        <button id="clearButton">Clear</button>
+        <span id="score">Score: 0</span>
+        <span id="timer">Timer: 0</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+<footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <p>Addendum: To create the game page, we structured an HTML layout with a header, main game area, and a footer. 
+      CSS was employed for styling, utilizing flexbox for layout and setting a background image for the entire page.
+       Game logic in JavaScript generated a grid of clickable squares, each representing a game state. 
+       Square clicks triggered toggling states and initiating timers. Functions managed score updates, clearing the board, and randomly turning on squares. 
+       CSS styled the buttons, altering colors on hover, and designed score and timer elements. 
+       The development process integrated HTML for structure, CSS for design, and JavaScript for interactive functionality, resulting in a dynamic Lights Out game experience.</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
