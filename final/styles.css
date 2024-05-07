@@ -1,0 +1,98 @@
+/* Complete CSS for styling the game with color adjustments */
+
+/* Reset default margin and font */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set background image for the entire page */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Style header */
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Background color for header with opacity */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style main content area */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.7); /* Background color for footer with opacity */
+}
+
+/* Wrapper for game components */
+.wrapper {
+  text-align: center;
+}
+
+/* Game board container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 50px); /* Adjust columns as needed */
+  gap: 5px; /* Adjust gap between squares */
+  margin-bottom: 20px;
+}
+
+/* Individual squares */
+.square {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  background-color: #63a4ff; /* Default color for squares */
+  border: 1px solid #000; /* Border for clarity */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Style for squares when turned off */
+.square.is-off {
+  background-color: #ff6b6b; /* Color when turned off */
+}
+
+/* Controls area styling */
+.controls {
+  margin-bottom: 20px;
+}
+
+/* Clear button styling */
+#clearButton {
+  margin-right: 10px;
+  background-color: #ffcc00; /* Change button background color */
+  color: #fff; /* Change button text color */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Change button background color on hover */
+#clearButton:hover {
+  background-color: #e6b800;
+}
+
+/* Style score and timer */
+#score, #timer {
+  color: #fff; /* Change text color for score and timer */
+  margin-right: 20px;
+  font-weight: bold;
+}
